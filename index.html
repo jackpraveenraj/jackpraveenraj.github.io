@@ -51,17 +51,52 @@
         color: white;
     }
 
+    /* Section Spacing */
+    section {
+      padding: 60px 0;
+    }
+
+    /* Experience Section */
+    .experience h2 {
+      margin-bottom: 40px;
+    }
+    .experience .row {
+      margin-bottom: 30px;
+    }
+    .experience h4 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .experience p {
+      font-size: 16px;
+    }
+    .experience ul {
+      padding-left: 20px;
+      list-style-type: none;
+    }
+    .experience ul li {
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .experience ul li::before {
+      content: "\2022";
+      color: #e33434;
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: -1em;
+    }
+
     /* Skills Section */
     .skills {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       flex-wrap: wrap;
-      padding: 50px 0;
-      background-color: #f7f7f7;
+      padding: 60px 0;
     }
     .skill-card {
-      width: 200px;
-      padding: 20px;
+      width: 220px;
+      padding: 25px;
       text-align: center;
       border-radius: 8px;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -71,6 +106,11 @@
     .skill-card h3 {
       font-size: 18px;
       margin-bottom: 10px;
+    }
+
+    /* Contact Section */
+    .contact h2 {
+      margin-bottom: 40px;
     }
   </style>
 </head>
@@ -112,7 +152,7 @@
 </nav>
 
 <!-- ABOUT SECTION -->
-<section class="about d-flex align-items-center py-5" id="about">
+<section class="about d-flex align-items-center" id="about">
   <div class="container">
     <div class="row">
       <div class="col-lg-5 col-md-12 mb-4">
@@ -175,7 +215,7 @@
 </section>
 
 <!-- EXPERIENCE SECTION (NEW) -->
-<section id="experience" class="py-5">
+<section id="experience" class="experience py-5">
   <div class="container">
     <h2 class="text-center">Experience</h2>
     <div class="row mt-4">
