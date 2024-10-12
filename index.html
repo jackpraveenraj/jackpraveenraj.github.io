@@ -15,6 +15,9 @@
   <!-- OWL CAROUSEL -->
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <!-- UNICONS ICONS (Fix for the missing icons) -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   
   <!-- MAIN STYLE -->
   <link rel="stylesheet" href="css/tooplate-style.css">
@@ -26,11 +29,33 @@
   <meta property="og:url" content="https://jackpraveenraj.github.io/">
   <meta name="twitter:card" content="summary_large_image">
 
+  <!-- Custom Styles -->
   <style>
     /* Custom CSS for more spacing between nav items */
     .custom-nav-spacing .nav-item {
         margin-left: 60px;
         margin-right: 60px;
+    }
+
+    /* Custom red button color */
+    .btn-primary {
+        background-color: #e33434; /* Replace this with your desired red color */
+        border-color: #e33434; /* Match border color to the button background */
+    }
+
+    .btn-primary:hover {
+        background-color: #d12b2b; /* Darker shade of red for hover state */
+        border-color: #d12b2b; /* Match border color on hover */
+    }
+
+    .btn-outline-dark {
+        color: #e33434; /* Change text color for outline buttons */
+        border-color: #e33434; /* Change border color for outline buttons */
+    }
+
+    .btn-outline-dark:hover {
+        background-color: #e33434; /* Background becomes red on hover */
+        color: white; /* Text becomes white on hover */
     }
   </style>
 </head>
@@ -57,7 +82,7 @@
       </ul>
       <div class="ml-lg-auto">
         <div class="color-mode d-lg-flex align-items-center">
-          <i class="color-mode-icon"></i>
+          <i class="uil uil-moon"></i> <!-- Fixed moon icon for dark mode toggle -->
           <span class="ml-2">Color Mode</span>
         </div>
       </div>
@@ -181,41 +206,6 @@
     });
   });
 </script>
-
-<!-- Optional Dark Mode CSS -->
-<style>
-  body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-  }
-
-  .navbar-light.bg-light {
-    background-color: #ffffff;
-  }
-
-  body.dark-mode .navbar-light.bg-light {
-    background-color: #333;
-  }
-
-  .btn-primary {
-    background-color: #007bff;
-  }
-  
-  body.dark-mode .btn-primary {
-    background-color: #4a90e2;
-  }
-
-  .contact-form textarea, 
-  .contact-form input {
-    color: #333;
-  }
-
-  body.dark-mode .contact-form textarea, 
-  body.dark-mode .contact-form input {
-    background-color: #333;
-    color: #fff;
-  }
-</style>
 
 </body>
 </html>
